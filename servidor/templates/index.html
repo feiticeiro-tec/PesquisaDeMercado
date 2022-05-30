@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <form action="/" method="get" accept-charset="utf-8" class="busca">
+            <input type="text" name="buscar">
+            <input type="submit" value="Buscar">
+        </form>
+    </header>
+    <div class="box">
+        {% if data %}
+            {% for key,valor in data['nome'].items() %}
+                <a class="card" href="{{data['url'][key]}}">
+                    <img src="{{data['image'][key]}}" class="image">
+                    <p class="titulo">{{valor}}</p>
+                    <span class="preço">R$: {{data['preço'][key]}}</span>
+                </a>
+            {% endfor %}
+        {% else %}
+            <p class="boas-vindas">Boas Vindas Oque Deseja Pesquisar ?</p>
+        {% endif %}
+    </div>
+</body>
+</html>

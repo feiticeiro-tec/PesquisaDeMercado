@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    background: #252728;
+}
+
+header{
+    padding: 10px;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.busca{
+    width: fit-content;
+    margin-left: auto;
+}
+.busca input[type='submit']{
+    border: none;
+    background: none;
+    font-family: monospace;
+    font-size: 15px;
+    color: #00f100;
+    cursor: pointer;
+}
+
+.busca input[type='text']{
+    border: solid #06cf07 1px;
+    border-radius: 5px;
+    padding: 7px;
+    background: none;
+    color: #06cf07;
+}
+.boas-vindas{
+    margin: auto;
+    color: #06cf07;
+    font-size: 19px;
+}
+.card{
+    display: block;
+    width: 250px;
+    border: solid 1px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+    background: white;
+    height: fit-content;
+    cursor: pointer;
+    color: black;
+}
+
+.image{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+
+.title,.preço{
+    font-family: monospace;
+    font-size: 14px;
+}
+.preço{
+    font-size: 16px;
+
+}
