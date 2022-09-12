@@ -13,7 +13,7 @@ def run_crawl(buscar):
     data = []
     nome = ''.join([str(randint(1,10)) for i in range(10)])+'.json'
     for loja in ['amazon','americanas','casas_bahia','extra','submarino']:
-        subprocess.run(['heroku','run','scrapy','crawl',loja,'-a',f'buscar="{buscar}"','-O',nome,'--app','pesquisa-de-mercado-python'])
+        subprocess.run(['scrapy','crawl',loja,'-a',f'buscar="{buscar}"','-O',nome])
         with open(nome) as file:
             for row in json.loads(file.read()):
                 data.append(row)
