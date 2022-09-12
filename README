@@ -1,0 +1,13 @@
+# PROJETO DE ESTUDO SCRAPY E SPIDER
+
+o projeto pesquisa de mercado, faz uma busca por produto nos sites.
+Amazon, Americanas, Casas_bahia, Extra, Submarino.
+
+> o projeto foi encerrado, porem futuramente haverá a continuidade porem com outra lib, pos o scrapy por si só ja é um serviço, e eu contaria de fazer algo mais flex.
+como uma api e uma homepage em um mesmo serviço
+
+```
+pip install -r requirements.txt
+flask run
+```
+> http://localhost:5000
